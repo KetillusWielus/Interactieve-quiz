@@ -137,6 +137,7 @@ function draw() {
    text("Who wants to be a millionaire but with cats, also the building will suffer a mild blackout when you lose!,  1:Default cat 2:kitten 3: Le chat",20,20)
  }
 
+ //verschillende spelers met keybind
  if (keyIsPressed == true && isStarted == false) {
   if (keyCode == 49) {
    playerVar = 1;
@@ -153,6 +154,7 @@ function draw() {
  }
 } 
 
+//achtergrond
  if (isStarted == true) {
    image(bgImg, 0,0,800,600);
    image(hostImg, 600,170,140,240);
@@ -163,7 +165,7 @@ function draw() {
    }
  }
 
-
+// verschillende spelers
   if (playerVar == 1 && isFalse == false) {
     image(img1, 20,180,140,240);
   } else if (playerVar == 2) {
